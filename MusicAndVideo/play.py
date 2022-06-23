@@ -82,7 +82,7 @@ async def ytdl(link):
         return 0, stderr.decode()
 
 
-@Client.on_message(filters.command(["play"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["پخش"], prefixes=f"{HNDLR}"))
 async def play(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -90,7 +90,7 @@ async def play(client, m: Message):
     if replied:
         if replied.audio or replied.voice:
             await m.delete()
-            huehue = await replied.reply("**🔍 ᴘʀᴏᴄᴇssɪɴɢ**")
+            huehue = await replied.reply("** کوروش دارم میگردم👀 ᴘʀᴏᴄᴇssɪɴɢ**")
             dl = await replied.download()
             link = replied.link
             if replied.audio:
@@ -139,7 +139,7 @@ async def play(client, m: Message):
             await m.reply("ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ ғɪʟᴇ ᴏʀ ɢɪᴠᴇ sᴏᴍᴇᴛʜɪɴɢ ғᴏʀ sᴇᴀʀᴄʜ ")
         else:
             await m.delete()
-            huehue = await m.reply("🔍 sᴇᴀʀᴄʜɪɴɢ")
+            huehue = await m.reply(" کوروش دارم میگردم👀 sᴇᴀʀᴄʜɪɴɢ")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -193,7 +193,7 @@ async def play(client, m: Message):
                             await huehue.edit(f"`{ep}`")
 
 
-@Client.on_message(filters.command(["vplay"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["ویدیو"], prefixes=f"{HNDLR}"))
 async def vplay(client, m: Message):
     replied = m.reply_to_message
     chat_id = m.chat.id
@@ -201,7 +201,7 @@ async def vplay(client, m: Message):
     if replied:
         if replied.video or replied.document:
             await m.delete()
-            huehue = await replied.reply("**🔍 ᴘʀᴏᴄᴇssɪɴɢ**")
+            huehue = await replied.reply("** کوروش دارم میگردم👀 ᴘʀᴏᴄᴇssɪɴɢ**")
             dl = await replied.download()
             link = replied.link
             if len(m.command) < 2:
@@ -264,7 +264,7 @@ async def vplay(client, m: Message):
             await m.reply("**ʀᴇᴘʟʏ ᴛᴏ ᴀᴜᴅɪᴏ ғɪʟᴇ ᴏʀ ɢɪᴠᴇ sᴏᴍᴇᴛʜɪɴɢ ғᴏʀ sᴇᴀʀᴄʜ**")
         else:
             await m.delete()
-            huehue = await m.reply("**🔎 sᴇᴀʀᴄʜɪɴɢ")
+            huehue = await m.reply("**🔎 کوروش دارم میگردم👀 sᴇᴀʀᴄʜɪɴɢ")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
@@ -335,7 +335,7 @@ async def playfrom(client, m: Message):
             limit = 10
             lmt = 9
         await m.delete()
-        hmm = await m.reply(f"🔎 sᴇᴀʀᴄʜɪɴɢ {limit} ʀᴀɴᴅᴏᴍ sᴏɴɢ ғʀᴏᴍ {chat}**")
+        hmm = await m.reply(f"🔎 کوروش دارم میگردم👀 sᴇᴀʀᴄʜɪɴɢ {limit} ʀᴀɴᴅᴏᴍ sᴏɴɢ ғʀᴏᴍ {chat}**")
         try:
             async for x in bot.search_messages(chat, limit=limit, filter="audio"):
                 location = await x.download()
