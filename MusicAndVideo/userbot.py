@@ -30,17 +30,17 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(filters.command(["ping"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["پینگ"], prefixes=f"{HNDLR}"))
 async def ping(client, m: Message):
     await m.delete()
     start = time()
     current_time = datetime.utcnow()
-    m_reply = await m.reply_text("⚡")
+    m_reply = await m.reply_text("💣")
     delta_ping = time() - start
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
     await m_reply.edit(
-        f"<b>😂 𝙿𝙾𝙽𝙶</b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ 𝙰𝙲𝚃𝙸𝚅𝙴</b> - `{uptime}`"
+        f"<b>👽پینگ </b> `{delta_ping * 1000:.3f} ms` \n<b>⏳ 𝙰𝙲𝚃𝙸𝚅𝙴</b> - `{uptime}`"
     )
 
 
@@ -63,11 +63,11 @@ async def restart(client, m: Message):
     quit()
 
 
-@Client.on_message(filters.command(["help"], prefixes=f"{HNDLR}"))
+@Client.on_message(filters.command(["راهنما"], prefixes=f"{HNDLR}"))
 async def help(client, m: Message):
     await m.delete()
     HELP = f"""
-<b>❤️ ʜᴇʟʟᴏ {m.from_user.mention}!
+<b>💀 ʜᴇʟʟᴏ {m.from_user.mention}!
 
 🛠  Hᴇʟᴘ Mᴇɴᴜ
 
@@ -93,19 +93,19 @@ async def help(client, m: Message):
 async def repo(client, m: Message):
     await m.delete()
     REPO = f"""
-<b>❤️ ʜᴇʟʟᴏ {m.from_user.mention}!
+<b> 👽 ʜᴇʟʟᴏ {m.from_user.mention}!
       ✪ 🆂︎ʜᴇʜᴢʜᴀᴅɪ 🅼︎ᴜsɪᴄ ✪
 
  ᴛᴇʟᴇɢʀᴀᴍ Usᴇʀʙᴏᴛ ᴛᴏ ᴘʟᴀʏ sᴏɴɢs ᴀɴᴅ ᴠɪᴅᴇᴏs ɪɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ sᴜᴍɪᴛ ʏᴀᴅᴀᴠ.
 
 »  sᴜʙsᴄʀɪʙᴇ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ
 • [ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ](https://youtube.com/channel/UCtI7hbY-BD7wvuIzoSU0cEw)
-• [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/TechQuard)
+• [ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ](https://t.me/qorosh)
 
 
 »  ✪ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ✪
- • ғɪʀsᴛ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʜᴇɴ ᴛʏᴘᴇ #Shehzhadi-Music-Userbot
-» sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ || [ᴛᴇᴄʜ ǫᴜᴀʀᴅ sᴜᴘᴘᴏʀᴛ](https://t.me/TechQuardSupport) 
+ • ғɪʀsᴛ ᴊᴏɪɴ sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀɴᴅ ᴛʜᴇɴ ᴛʏᴘᴇ #qorosh_bot
+» sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ || [ᴛᴇᴄʜ ǫᴜᴀʀᴅ sᴜᴘᴘᴏʀᴛ](https://t.me/qorosh) 
  
  </b>
 """
