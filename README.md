@@ -2,12 +2,12 @@
 
 ### 𝗦ʜᴇʜᴢʜᴀᴅɪ 𝗠ᴜsɪᴄ ɪꜱ ᴀ ᴛᴇʟᴇɢʀᴀᴍ ᴜꜱᴇʀʙᴏᴛ ᴛᴏ ᴘʟᴀʏ ꜱᴏɴɢꜱ ᴀɴᴅ ᴠɪᴅᴇᴏꜱ ɪɴ ᴛᴇʟᴇɢʀᴀᴍ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴅᴇᴠᴇʟᴏᴘᴇᴅ ʙʏ ꜱᴜᴍɪᴛʏᴀᴅᴀᴠ.
 
-<p align="center"><a href="https://t.me/World_FriendShip_Zone"><img src="https://telegra.ph/file/46030a142f5bd7f03c948.jpg" width="300"></a></p>
+<p align="center"><a href="https://t.me/qorosh"><img src="https://telegra.ph/file/46030a142f5bd7f03c948.jpg" width="300"></a></p>
 
 
 
 ### ꜱᴜᴘᴘᴏʀᴛ ᴀɴᴅ ᴜᴘᴅᴀᴛᴇꜱ
-<a href="https://t.me/TechQuardSupport"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
+<a href="https://t.me/qorosh"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram">
 
 ### ɢᴇɴᴇʀᴀᴛᴇ ᴘʏʀᴏɢʀᴀᴍ sᴛʀɪɴɢ sᴇssɪᴏɴ
 
